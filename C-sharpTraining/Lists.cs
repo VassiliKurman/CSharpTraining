@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 namespace C_sharpTraining
 {
     /**
-     * Code snippets taken from microsoft tutorials and modified
+     * Code snippets taken from microsoft tutorials and modified.
+     * "System.Diagnostics.Debug.WriteLine()" is used instead of "Console.WriteLine()" to see
+     * output in the debug mode, due to well known issue with Console view in Visual Studio.
     */
     class Lists
     {
@@ -35,6 +37,37 @@ namespace C_sharpTraining
             System.Diagnostics.Debug.WriteLine("--- Referencing items by index ---");
             System.Diagnostics.Debug.WriteLine($"My name is {names[0]}.");
             System.Diagnostics.Debug.WriteLine($"I've added {names[2]} and {names[3]} to the list.");
+
+            // Checking the list size using Count property
+            System.Diagnostics.Debug.WriteLine($"The list has {names.Count} people in it");
+
+            // Searching for item in the list
+            var index = names.IndexOf("Maria");
+            if (index != -1)
+                System.Diagnostics.Debug.WriteLine($"The name {names[index]} is at index {index}");
+
+            var notFound = names.IndexOf("Not Found");
+            System.Diagnostics.Debug.WriteLine($"When an item is not found, IndexOf returns {notFound}");
+
+            // Sorting items in the list. This will modify existing list
+            names.Sort();
+            foreach (var name in names)
+            {
+                System.Diagnostics.Debug.WriteLine($"Hello {name.ToUpper()}!");
+            }
+
+            // Challenge to create Fibonacci Numbers
+            System.Diagnostics.Debug.WriteLine("--- Building list of Fibonacci numbers ---");
+            var fibonacciNumbers = new List<int> { 1, 1 };
+            while (fibonacciNumbers.Count < 20)
+            {
+                var previous = fibonacciNumbers[fibonacciNumbers.Count - 1];
+                var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
+
+                fibonacciNumbers.Add(previous + previous2);
+            }
+            foreach (var item in fibonacciNumbers)
+                System.Diagnostics.Debug.WriteLine(item);
         }
     }
 }
