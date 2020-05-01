@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpBasics", "C-sharpTraining\CSharpBasics.csproj", "{46BB6905-9AD3-4CD7-842F-D7E9E83C7434}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank", "Bank\Bank.csproj", "{38908331-D162-442F-B057-F7898F3C8069}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{46BB6905-9AD3-4CD7-842F-D7E9E83C7434}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46BB6905-9AD3-4CD7-842F-D7E9E83C7434}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46BB6905-9AD3-4CD7-842F-D7E9E83C7434}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38908331-D162-442F-B057-F7898F3C8069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38908331-D162-442F-B057-F7898F3C8069}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38908331-D162-442F-B057-F7898F3C8069}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38908331-D162-442F-B057-F7898F3C8069}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
